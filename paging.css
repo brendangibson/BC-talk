@@ -1,0 +1,28 @@
+.pages {
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: relative;
+	font-family: 'Nunito', sans-serif;
+	text-shadow: rgba(0, 0, 0, 0.24) 1px 1px 1px;
+}
+.pages .page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+h1 {
+	margin: 40% auto auto auto;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #B9090B;
+	color: #fff;
+	font-family: verdana, arial, sans-serif;
+	font-size: 12px;
+}

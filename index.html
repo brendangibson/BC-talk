@@ -76,7 +76,7 @@
 		    }
 		});
 		
-		$(document).on('keypress', function (e) {
+		$(document).keypress(function (e) {
 			switch (e.which) {
 				case 'n', 'N': 
 					stepForward();

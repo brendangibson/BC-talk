@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Multivariate Testing</title>
+	<title>MT</title>
 	<style type="text/css">
 		.pages {
 			float: left;
@@ -77,7 +77,7 @@
 		});
 		
 		$(document).keypress(function (e) {
-			switch (e.which) {
+			switch (String.fromCharCode(e.which)) {
 				case 'n', 'N': 
 					stepForward();
 					break;

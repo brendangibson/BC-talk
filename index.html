@@ -15,13 +15,16 @@
 			height: 100%;
 			position: absolute;
 		}
+		h1 {
+			margin: 40% auto;
+		}
 	</style>
 </head>
 <body>
 
 <div class="pages">
 	<div class="page">
-		1st page
+		<h1>Using multivariate testing to continually improve user experience</h1>
 	</div>
 	<div class="page">
 		2st page
@@ -54,7 +57,7 @@
 				}
 			},
 			stepBack = function () {
-				if (currentPage > 0) {
+				if (currentPage > 1) {
 					currentPage -= 1;
 					showPage(currentPage);
 				}				

@@ -78,10 +78,12 @@
 		
 		$(document).keypress(function (e) {
 			switch (String.fromCharCode(e.which)) {
-				case 'n', 'N': 
+				case 'n':
+				case 'N': 
 					stepForward();
 					break;
-				case 'p', 'P':
+				case 'p':
+				case 'P':
 					stepBack();
 					break;
 				default:

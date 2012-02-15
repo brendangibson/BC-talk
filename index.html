@@ -1,7 +1,42 @@
 <html>
 <head>
 	<title>Multivariate Testing</title>
+	<style type="text/css">
+		.pages {
+			float: left;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+		.pages .page {
+			display: none;
+		}
+	</style>
 </head>
 <body>
+
+<div class="pages">
+	<div class="page">
+		1st page
+	</div>
+	<div class="page">
+		2st page
+	</div>
+	<div class="page">
+		3rd page
+	</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+	(function ($) {
+		var pagesSelector = ".pages",
+			pageSelector = pagesSelector + " .page";
+		
+		$(document).ready(function () {
+			$(pageSelector + ":first").fadeIn();	
+		});
+	}(jQuery));
+</script>
 </body>
 </html>

@@ -7,9 +7,13 @@
 			width: 100%;
 			height: 100%;
 			margin: 0;
+			position: relative;
 		}
 		.pages .page {
 			display: none;
+			width: 100%;
+			height: 100%;
+			position: absolute;
 		}
 	</style>
 </head>
@@ -44,7 +48,7 @@
 			},
 		
 			stepForward = function () {
-				if (currentPage + 1 < numPages) {
+				if (currentPage < numPages) {
 					currentPage += 1;
 					showPage(currentPage);
 				}

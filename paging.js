@@ -34,7 +34,7 @@
 		      HTMLElement.prototype.msRequestFullScreen;
 		      
 		$(fullScreenSelector).on('click', function () {
-			$(.pagesSelector).get(0).requestFullScreen();
+			$(pagesSelector).get(0).requestFullScreen();
 		});      
 		
 		$(document).on('click', function(e) {

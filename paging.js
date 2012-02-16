@@ -3,6 +3,7 @@
 		
 		var pagesSelector = ".pages",
 			pageSelector = pagesSelector + " .page",
+			fullScreenSelector = ".fullScreen",
 			currentPage = 0,
 			numPages = $(pageSelector).size(),
 		
@@ -23,6 +24,18 @@
 					showPage(currentPage);
 				}				
 			};
+			
+			
+		 HTMLElement.prototype.requestFullScreen =
+		      HTMLElement.prototype.requestFullScreen ||
+		      HTMLElement.prototype.webkitRequestFullScreen ||
+		      HTMLElement.prototype.mozRequestFullScreen ||
+		      HTMLElement.prototype.oRequestFullScreen ||
+		      HTMLElement.prototype.msRequestFullScreen;
+		      
+		$(fullScreenSelector).on('click', function () {
+			$(.pagesSelector).get(0).requestFullScreen();
+		});      
 		
 		$(document).on('click', function(e) {
 		    switch (e.which) {

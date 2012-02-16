@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 .pages {
 	float: left;
 	width: 100%;
@@ -52,4 +56,5 @@ dd, dt {
 	color: #fff;
 	font-family: verdana, arial, sans-serif;
 	font-size: 12px;
+	opacity: 0.6;
 }

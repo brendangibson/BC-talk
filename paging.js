@@ -57,6 +57,10 @@
 			}	
 		});
 		
+		$(document).on('swipeleft', stepForward);
+		$(document).on('swiperight', stepBack);
+		
+		
 		$(document).ready(function () {
 			currentPage = 1;
 			$(pageSelector + ":first").fadeIn();	

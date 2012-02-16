@@ -12,6 +12,7 @@ body {
 	font-family: 'Nunito', sans-serif;
 	color: #333;
 	text-shadow: rgba(0, 0, 0, 0.24) 1px 1px 1px;
+	background-color: white;
 }
 
 .pages .page {

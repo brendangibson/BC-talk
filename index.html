@@ -128,7 +128,7 @@
 		"use strict";
 		
 		var fortyOneShades = function (el) {
-			var width = parseInt($(el).width() / 8, 10),
+			var width = Math.floor($(el).width() / 8),
 			height = parseInt($(el).height() / 5, 10),
 			i = 1;
 			

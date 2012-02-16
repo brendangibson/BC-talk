@@ -7,15 +7,23 @@
 	font-family: 'Nunito', sans-serif;
 	text-shadow: rgba(0, 0, 0, 0.24) 1px 1px 1px;
 }
+
 .pages .page {
 	display: none;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
+
 h1 {
 	margin: 40% auto auto auto;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	width: 100%;
+	text-align: center;
+}
+
 .footer {
 	position: fixed;
 	bottom: 0;

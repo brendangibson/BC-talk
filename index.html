@@ -5,6 +5,13 @@
 	<link type="text/css" rel="stylesheet" href="paging.css">
 	<style type="text/css">
 		.blue {
+			display: inline-block;
+		}
+		.blue:hover {
+			opacity: 0.5;
+		}
+		.fortyOneShades h2 {
+			color: #69d2e7;
 			position: absolute;
 		}
 	</style>
@@ -81,16 +88,16 @@
 		"use strict";
 		
 		var fortyOneShades = function (el) {
-			var width = $(el).width() / 8,
-			height = $(el).height() / 5,
+			var width = parseInt($(el).width() / 8, 10),
+			height = parseInt($(el).height() / 5, 10),
 			i = 1;
 			
-			for (i = 1; i < 40; i+=1) {
-				var 	blueness = Math.random(255);
+			for (i = 1; i <= 40; i+=1) {
+				var 	blueness = 'rgb(0,0,'+ parseInt(Math.random()*155 + 100, 10).toString(),
 					blueBox = $('<div class="blue"/>').css('width',width + 'px')
 					.css('height',height + 'px')
-					.css('background-color','rgb(0,0,' + blueness + ')');
-				$(el).append('<div class="blue"/>');	
+					.css('background-color', blueness);
+				$(el).append(blueBox);	
 			}
 		};
 		

@@ -57,8 +57,8 @@
 			}	
 		});
 		
-		$(document).on('swipeleft', stepForward);
-		$(document).on('swiperight', stepBack);
+		$(document).on('swipeleft', stepBack);
+		$(document).on('swiperight', stepForward);
 		
 		
 		$(document).ready(function () {

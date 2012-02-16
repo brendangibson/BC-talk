@@ -54,6 +54,18 @@ dd, dt {
 	display: inline-block;
 }
 
+.fullScreen {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	opacity: 0;
+	z-index: 10;
+}
+
+.fullScreen:hover {
+	opacity: 0.5;
+}
+
 .footer {
 	position: fixed;
 	bottom: 0;

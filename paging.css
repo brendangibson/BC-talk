@@ -64,4 +64,5 @@ dd, dt {
 	font-family: verdana, arial, sans-serif;
 	font-size: 12px;
 	opacity: 0.6;
+	z-index: 10;
 }

@@ -40,6 +40,10 @@ body {
 	left: 51%;
 }
 
+.lighten: {
+	color: #bbb;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	text-align: center;
@@ -87,10 +91,7 @@ iframe {
 img.bg {
 	position: absolute;
 	z-index: 0;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	width: 100%;
 }
 
 .fullScreen:hover {

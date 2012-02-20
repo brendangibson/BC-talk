@@ -79,6 +79,7 @@ dd, dt {
 	-ms-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	background: transparent url(fullscreen.png) no-repeat left top;
 }
 
 iframe {
@@ -92,6 +93,7 @@ img.bg {
 	position: absolute;
 	z-index: 0;
 	width: 100%;
+	opacity: 0.9;
 }
 
 .fullScreen:hover {

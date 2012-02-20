@@ -33,7 +33,8 @@
 		      HTMLElement.prototype.oRequestFullScreen ||
 		      HTMLElement.prototype.msRequestFullScreen;
 		      
-		$(fullScreenSelector).on('click', function () {
+		$(fullScreenSelector).on('click', function (e) {
+			e.stopPropagation();
 			$(pagesSelector).get(0).requestFullScreen();
 		});      
 		

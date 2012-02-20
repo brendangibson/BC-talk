@@ -72,6 +72,13 @@ dd, dt {
 	transition: all 0.3s ease;
 }
 
+iframe {
+	height: 100%;
+	width: 100%
+	border: none;
+	box-shadow: 5px 5px 5px #ccc;
+}
+
 .fullScreen:hover {
 	opacity: 0.5;
 }

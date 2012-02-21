@@ -40,9 +40,9 @@
 					selectedChildIndex = parseInt(Math.random() * numChildren, 10);
 				
 				$children.each(function () {
-					$(this).css("opacity",0);	
+					$(this).fadeOut();	
 				});
-				$children[selectedChildIndex].css("opacity", 1);
+				$children[selectedChildIndex].fadeIn();
 				
 			};
 			

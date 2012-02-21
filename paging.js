@@ -28,7 +28,7 @@
 			setupFolders = function () {
 				var marginTop = 0;
 				$(folderSelector).children().each(function () {
-					$(this).css("margin-top",marginTop + 'px');
+					$(this).css("margin-top",marginTop + 'px !important');
 					marginTop += 20;
 				});
 			};

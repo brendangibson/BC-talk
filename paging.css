@@ -107,12 +107,12 @@ img.bg {
 	opacity: 0.9;
 }
 
-.folder > * {
+.page .folder > * {
 	z-index: 1;
 	position: absolute !important;
 }
 
-.folder > *:hover {
+.page .folder > *:hover {
 	z-index: 20;
 }
 

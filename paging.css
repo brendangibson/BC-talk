@@ -10,6 +10,8 @@ body {
 	margin: 0;
 	position: relative;
 	font-family: 'Nunito', sans-serif;
+	font-size: 36px;
+	line-height: 52px;
 	color: #333;
 	text-shadow: rgba(0, 0, 0, 0.24) 3px 3px 3px;
 	background-color: white;

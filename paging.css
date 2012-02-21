@@ -14,7 +14,7 @@ body {
 	font-size: 36px;
 	line-height: 52px;
 	color: #333;
-	text-shadow: 1px 1px 1px #000;
+	/*text-shadow: 1px 1px 1px #000;*/
 	background-color: white;
 }
 
@@ -46,7 +46,7 @@ body {
 .lighten {
 	color: #eee;
 	  text-shadow:
-	  	1px 1px 1px #000;
+	  	/*1px 1px 1px #000;*/
    		-1px -1px 0 #000,
     		1px -1px 0 #000,
     		-1px 1px 0 #000,

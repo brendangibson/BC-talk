@@ -13,7 +13,7 @@ body {
 	font-size: 36px;
 	line-height: 52px;
 	color: #333;
-	text-shadow: rgba(0, 0, 0, 0.24) 3px 3px 3px;
+	text-shadow: 1px 1px 1px #000;
 	background-color: white;
 }
 
@@ -45,7 +45,7 @@ body {
 .lighten {
 	color: #eee;
 	  text-shadow:
-	  	rgba(0, 0, 0, 0.24) 3px 3px 3px;
+	  	1px 1px 1px #000;
    		-1px -1px 0 #000,
     		1px -1px 0 #000,
     		-1px 1px 0 #000,
@@ -93,7 +93,7 @@ iframe {
 	height: 100%;
 	width: 100%;
 	border: none;
-	box-shadow: 5px 5px 5px #ccc;
+	box-shadow: -5px -5px 5px #ccc;
 }
 
 img.bg {

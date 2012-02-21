@@ -25,7 +25,7 @@ body {
 }
 
 .contentBox {
-	margin: 10% 5%;
+	margin: 5% 20%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -93,7 +93,10 @@ iframe {
 	height: 100%;
 	width: 100%;
 	border: none;
-	box-shadow: -5px -5px 5px #ccc;
+	box-shadow: -5px -5px 10px #CCCCCC, 
+		5px 5px 10px #CCCCCC, 
+		-5px 5px 10px #CCCCCC, 
+		5px -5px 10px #CCCCCC;
 }
 
 img.bg {

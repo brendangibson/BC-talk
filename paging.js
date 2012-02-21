@@ -44,7 +44,7 @@
 					$children.each(function () {
 						$(this).fadeOut();	
 					});
-					$children[selectedChildIndex].fadeIn();
+					$($children.get(selectedChildIndex)).fadeIn();
 				}, showTime);
 				
 			};

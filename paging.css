@@ -107,6 +107,14 @@ img.bg {
 	opacity: 0.9;
 }
 
+.folder > * {
+	z-index: 1;
+}
+
+.folder > *:hover {
+	z-index: 20;
+}
+
 .fullScreen:hover {
 	opacity: 0.5;
 }

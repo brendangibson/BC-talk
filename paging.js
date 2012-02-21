@@ -36,7 +36,8 @@
 			setupRandomFadeIns = function () {
 				var showTime = 15000,
 					$children = $(randomFadeInsSelector).children(),
-					numChildren = $children.size();
+					numChildren = $children.size(),
+					selectedChildIndex = 0;
 				
 				setInterval(function () {
 					selectedChildIndex = parseInt(Math.random() * numChildren, 10);

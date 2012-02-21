@@ -4,6 +4,7 @@
 		var pagesSelector = ".pages",
 			pageSelector = pagesSelector + " .page",
 			fullScreenSelector = ".fullScreen",
+			folderSelector = ".folder",
 			currentPage = 0,
 			numPages = $(pageSelector).size(),
 		
@@ -23,7 +24,16 @@
 					currentPage -= 1;
 					showPage(currentPage);
 				}				
+			},
+			setupFolders = function () {
+				var marginTop = 0;
+				$(folderSelector).children().each(function () {
+					$(this).css("margin-top",marginTop + 'px');
+					marginTop += 20;
+				});
 			};
+			
+			
 			
 			
 		 HTMLElement.prototype.requestFullScreen =
@@ -77,6 +87,7 @@
 		
 		$(document).ready(function () {
 			currentPage = 1;
-			$(pageSelector + ":first").fadeIn();	
+			$(pageSelector + ":first").fadeIn();
+			setupFolders();
 		});
 	}(jQuery));

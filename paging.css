@@ -109,6 +109,7 @@ img.bg {
 
 .folder > * {
 	z-index: 1;
+	position: absolute !important;
 }
 
 .folder > *:hover {

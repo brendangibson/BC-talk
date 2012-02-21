@@ -5,6 +5,7 @@
 			pageSelector = pagesSelector + " .page",
 			fullScreenSelector = ".fullScreen",
 			folderSelector = ".folder",
+			randomFadeInsSelector = ".randomFadeIns",
 			currentPage = 0,
 			numPages = $(pageSelector).size(),
 		
@@ -31,6 +32,18 @@
 					$(this).css("margin-top",marginTop + 'px !important');
 					marginTop += 20;
 				});
+			},
+			setupRandomFadeIns = function () {
+				var showTime = 15000,
+					$children = $(randomFadeInsSelector).children(),
+					numChildren = $children.size(),
+					selectedChildIndex = parseInt(Math.random() * numChildren, 10);
+				
+				$children.each(function () {
+					$(this).css("opacity",0);	
+				});
+				$children[selectedChildIndex].css("opacity", 1);
+				
 			};
 			
 			
@@ -88,6 +101,6 @@
 		$(document).ready(function () {
 			currentPage = 1;
 			$(pageSelector + ":first").fadeIn();
-			setupFolders();
+			setupRandomFadeIns();
 		});
 	}(jQuery));

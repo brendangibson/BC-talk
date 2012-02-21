@@ -35,7 +35,7 @@
 		      
 		$(fullScreenSelector).on('click', function (e) {
 			e.stopPropagation();
-			$(pagesSelector).get(0).requestFullScreen();
+			$("body").get(0).requestFullScreen();
 		});      
 		
 		$(document).on('click', function(e) {

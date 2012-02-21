@@ -107,14 +107,14 @@ img.bg {
 	opacity: 0.9;
 }
 
-.page .folder > * {
+.page .randomFadeIns > * {
 	z-index: 1;
 	position: absolute !important;
 }
 
-.page .folder > *:hover {
-	z-index: 20;
-}
+
+
+
 
 .fullScreen:hover {
 	opacity: 0.5;

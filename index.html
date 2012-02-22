@@ -40,6 +40,12 @@
 	<div class="page">
 		<img src="me.jpg" class="boxshot section" alt="me"/>
 		<div class="contentBox">
+		<h1>About me</h1>
+		</div>
+	</div>
+	<div class="page">
+		<img src="me.jpg" class="boxshot section" alt="me"/>
+		<div class="contentBox">
 		<h2>It's all about me</h2>
 		<ul>
 			<li>Senior User Interface Engineer at netflix.com</li>
@@ -63,14 +69,20 @@
 	<div class="page">
 		<div class="contentBox">
 		<ul>
-			<li>Explanation</li>
+			<li>Basic concepts</li>
 			<li>Why?</li>
-			<li>How it's implemented</li>
+			<li>How is it implemented?</li>
 			<li>Metrics</li>
 			<li>Results</li>
 			<li>Case study with SAC</li>
 			<li>Q & A</li>
 		</ul>
+		</div>
+	</div>
+	<div class="page">
+		<img src="concepts.jpg" class="boxshot section" alt="concepts"/>
+		<div class="contentBox">
+		<h1>Basic concepts</h1>
 		</div>
 	</div>
 	<div class="page">
@@ -96,6 +108,12 @@
 		<h2>Terms</h2>
 		<h3>Test</h3>
 		<h3>Cell</h3>
+		</div>
+	</div>
+	<div class="page">
+		<img src="why.jpg" class="boxshot section" alt="why"/>
+		<div class="contentBox">
+		<h1>Why?</h1>
 		</div>
 	</div>
 	<div class="page">
@@ -167,14 +185,93 @@
 		</div>
 	</div>
 	<div class="page">
+		<img src="why.jpg" class="boxshot section" alt="why?"/>
 		<div class="contentBox">
 		<h2>Who uses it?</h2>
 		Everyone but Apple
 		</div>
 	</div>
 	<div class="page fortyOneShades lighten">
+		<img src="why.jpg" class="boxshot section" alt="why?"/>
 		<div class="contentBox">
 		<h2>41 shades of blue</h2>
+		</div>
+	</div>
+	<div class="page">
+		<img src="how.jpg" class="boxshot section" alt="how?"/>
+		<div class="contentBox">
+		<h1>How is it implemented?</h1>
+		</div>
+	</div>
+	<div class="page">
+		<img src="how.jpg" class="boxshot section" alt="how?"/>
+		<div class="contentBox">
+		<h2>Test setup</h2>
+		<code>
+		    public void initCells() {
+		        setTestCells(
+		            new TestCell(), /* Control */
+		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+		                    GenrePagesTestFeature.BREADCRUMB),
+		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.CLICK_TO_LOAD,
+		                    GenrePagesTestFeature.BREADCRUMB),
+		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.NO_PAGINATION,
+		                    GenrePagesTestFeature.AUTO_LOAD, GenrePagesTestFeature.HIDE_LIST_LINK,
+		                    GenrePagesTestFeature.GALLERY_SORT, GenrePagesTestFeature.BREADCRUMB),
+		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.HIDE_GALLERY_LINK,
+		                    GenrePagesTestFeature.ROWS_WITH_TWO_TITLES, GenrePagesTestFeature.BREADCRUMB,
+		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+		                    GenrePagesTestFeature.RHS_BUTTONS),
+		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+		                    GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.BREADCRUMB),
+		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+		                    GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.GALLERY_SORT,
+		                    GenrePagesTestFeature.BREADCRUMB)
+		        );
+		    }
+		</code>
+		</div>
+	</div>
+	<div class="page">
+	<img src="how.jpg" class="boxshot section" alt="how?"/>
+	<div class="contentBox">
+		<h2>Business logic</h2>
+		<code>
+        	if (GenrePagesTestUtils.hasFeature(GenrePagesTestFeature.GALLERY_SORT)) {
+            		addModel(VideosByViewTypeAction.buildDropDownModel(getSortType(), getSortOrder()));
+        	}
+		</code>
+		</div>
+	</div>
+	<div class="page">
+	<img src="how.jpg" class="boxshot section" alt="how?"/>
+	<div class="contentBox">
+		<h2>Javascript</h2>
+		<code>http://cdn1.nflxext.com/FilePackageGetter/sharedSystem/pkg-nflxrsrc-f3ffc0161d7af00000203e1923095a247060171f6f8ff98380214-1329077382-1-4.js?v=1</code>
+		<h2>CSS</h2>
+		<code>http://cdn1.nflxext.com/FilePackageGetter/sharedSystem/pkg-nflxrsrc-00002008e2cd8094026246641838c904f01800-1329077376-1-4.css?v=1</code>
+		</div>
+	</div>
+	<div class="page">
+	<img src="how.jpg" class="boxshot section" alt="how?"/>
+	<div class="contentBox">
+		<h2>In the code</h2>
+		<code>
+		/**
+		 * @nfPackageName SCROLL_AFFORDANCE
+		 * @nfRequires ["MINISCROLL"]
+		 * @nfStrategy com.netflix.ui.pkgmodules.FileInclusionStrategies.SCROLL_AFFORDANCE
+		*/
+		</code>
+		</div>
+	</div>
+	<div class="page">
+		<div class="contentBox">
+		<h1>Metrics</h1>
 		</div>
 	</div>
 	<div class="page">

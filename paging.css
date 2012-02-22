@@ -158,7 +158,8 @@ pre {
 	color: #BAAE9E;
 	background-color: #28211C;
 	display: block;
-	font-size: 24px;
+	font-size: 18px;
+	overflow: auto;
 }
 
 .fullScreen:hover {

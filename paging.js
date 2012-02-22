@@ -34,7 +34,7 @@
 				});
 			},
 			setupRandomFadeIns = function () {
-				var showTime = 15000,
+				var showTime = 5000,
 					$children = $(randomFadeInsSelector).children(),
 					numChildren = $children.size(),
 					selectedChildIndex = 0;

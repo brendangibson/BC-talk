@@ -153,9 +153,11 @@ img.bg {
 	border-radius: 3px;
 }
 
-code {
+pre {
 	color: #BAAE9E;
 	background-color: #28211C;
+	display: block;
+	font-size: 24px;
 }
 
 .fullScreen:hover {

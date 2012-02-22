@@ -34,12 +34,12 @@
 				});
 			},
 			setupRandomFadeIns = function () {
-				var showTime = 15000,
-					$children = $(randomFadeInsSelector).children(),
-					numChildren = $children.size(),
+				var showTime = 5000,
 					selectedChildIndex = 0;
 				
 				setInterval(function () {
+					var $children = $(randomFadeInsSelector).children(),
+						numChildren = $children.size();
 					selectedChildIndex = parseInt(Math.random() * numChildren, 10);
 					$children.each(function () {
 						$(this).fadeOut();	

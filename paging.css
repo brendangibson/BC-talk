@@ -156,6 +156,8 @@ img.bg {
 code {
 	color: #BAAE9E;
 	background-color: #28211C;
+	display: block;
+	font-size: 24px;
 }
 
 .fullScreen:hover {

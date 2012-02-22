@@ -35,16 +35,16 @@
 			},
 			setupRandomFadeIns = function () {
 				var showTime = 5000,
-					selectedChildIndex = 0;
+					selectedChildIndex = 0,
+					ACTIVE_CLASS = "active";
 				
 				setInterval(function () {
 					var $children = $(randomFadeInsSelector).children(),
 						numChildren = $children.size();
 					selectedChildIndex = parseInt(Math.random() * numChildren, 10);
-					$children.each(function () {
-						$(this).fadeOut();	
-					});
-					$($children.get(selectedChildIndex)).fadeIn();
+					$children.removeClass(ACTIVE_CLASS);	
+					
+					$($children.get(selectedChildIndex)).addClass(ACTIVE_CLASS);
 				}, showTime);
 				
 			};

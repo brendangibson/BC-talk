@@ -153,6 +153,11 @@ img.bg {
 	border-radius: 3px;
 }
 
+code {
+	color: #BAAE9E;
+	background-color: #28211C;
+}
+
 .fullScreen:hover {
 	opacity: 0.5;
 }

@@ -74,6 +74,14 @@ dd, dt {
 	display: inline-block;
 }
 
+dt {
+	clear: both;
+}
+
+ul {
+	list-style-type: disc;
+}
+
 .fullScreen {
 	position: absolute;
 	height: 100px;

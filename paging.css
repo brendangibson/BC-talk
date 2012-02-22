@@ -112,6 +112,10 @@ iframe {
 		5px -5px 10px #CCCCCC;
 }
 
+.contentBox img {
+	margin: 0 auto;
+}
+
 img.bg {
 	position: absolute;
 	z-index: 0;

@@ -207,31 +207,31 @@
 		<div class="contentBox">
 		<h2>Test setup</h2>
 		<pre>
-		    public void initCells() {
-		        setTestCells(
-		            new TestCell(), /* Control */
-		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-		                    GenrePagesTestFeature.BREADCRUMB),
-		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.CLICK_TO_LOAD,
-		                    GenrePagesTestFeature.BREADCRUMB),
-		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.NO_PAGINATION,
-		                    GenrePagesTestFeature.AUTO_LOAD, GenrePagesTestFeature.HIDE_LIST_LINK,
-		                    GenrePagesTestFeature.GALLERY_SORT, GenrePagesTestFeature.BREADCRUMB),
-		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.HIDE_GALLERY_LINK,
-		                    GenrePagesTestFeature.ROWS_WITH_TWO_TITLES, GenrePagesTestFeature.BREADCRUMB,
-		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-		                    GenrePagesTestFeature.RHS_BUTTONS),
-		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-		                    GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.BREADCRUMB),
-		            new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-		                    GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-		                    GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.GALLERY_SORT,
-		                    GenrePagesTestFeature.BREADCRUMB)
-		        );
-		    }
+public void initCells() {
+	setTestCells(
+	    new TestCell(), /* Control */
+	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+	            GenrePagesTestFeature.BREADCRUMB),
+	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.CLICK_TO_LOAD,
+	            GenrePagesTestFeature.BREADCRUMB),
+	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.NO_PAGINATION,
+	            GenrePagesTestFeature.AUTO_LOAD, GenrePagesTestFeature.HIDE_LIST_LINK,
+	            GenrePagesTestFeature.GALLERY_SORT, GenrePagesTestFeature.BREADCRUMB),
+	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.HIDE_GALLERY_LINK,
+	            GenrePagesTestFeature.ROWS_WITH_TWO_TITLES, GenrePagesTestFeature.BREADCRUMB,
+	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+	            GenrePagesTestFeature.RHS_BUTTONS),
+	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+	            GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.BREADCRUMB),
+	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
+	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
+	            GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.GALLERY_SORT,
+	            GenrePagesTestFeature.BREADCRUMB)
+	);
+}
 		</pre>
 		</div>
 	</div>
@@ -240,9 +240,9 @@
 	<div class="contentBox">
 		<h2>Business logic</h2>
 		<pre>
-        	if (GenrePagesTestUtils.hasFeature(GenrePagesTestFeature.GALLERY_SORT)) {
-            		addModel(VideosByViewTypeAction.buildDropDownModel(getSortType(), getSortOrder()));
-        	}
+if (GenrePagesTestUtils.hasFeature(GenrePagesTestFeature.GALLERY_SORT)) {
+    	addModel(VideosByViewTypeAction.buildDropDownModel(getSortType(), getSortOrder()));
+}
 		</pre>
 		</div>
 	</div>
@@ -260,11 +260,11 @@
 	<div class="contentBox">
 		<h2>In the code</h2>
 		<pre>
-		/**
-		 * @nfPackageName SCROLL_AFFORDANCE
-		 * @nfRequires ["MINISCROLL"]
-		 * @nfStrategy com.netflix.ui.pkgmodules.FileInclusionStrategies.SCROLL_AFFORDANCE
-		*/
+/**
+ * @nfPackageName SCROLL_AFFORDANCE
+ * @nfRequires ["MINISCROLL"]
+ * @nfStrategy com.netflix.ui.pkgmodules.FileInclusionStrategies.SCROLL_AFFORDANCE
+*/
 		</pre>
 		</div>
 	</div>

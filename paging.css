@@ -46,7 +46,7 @@ body {
 .lighten {
 	color: #eee;
 	  text-shadow:
-	  	/*1px 1px 1px #000;*/
+	  	1px 1px 1px #000,
    		-1px -1px 0 #000,
     		1px -1px 0 #000,
     		-1px 1px 0 #000,
@@ -71,7 +71,11 @@ h3 {
 }
 
 dd, dt {
-	display: inline-block;
+	float: left;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+	
 }
 
 dt {
@@ -112,7 +116,7 @@ img.bg {
 	position: absolute;
 	z-index: 0;
 	width: 100%;
-	opacity: 0.9;
+	height: 100%;
 }
 
 .page .randomFadeIns > .twitter-tweet-rendered {

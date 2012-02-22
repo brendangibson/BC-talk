@@ -40,7 +40,7 @@
 				setInterval(function () {
 					var $children = $(randomFadeInsSelector).children(),
 						numChildren = $children.size(),
-						selectedChildIndex = parseInt(Math.random() * numChildren, 10)
+						selectedChildIndex = parseInt(Math.random() * numChildren, 10),
 						randomTop = parseInt(Math.random() * 70, 10),
 						randomLeft = parseInt(Math.random() * 60, 10),
 						$chosenOne = $($children.get(selectedChildIndex));

@@ -172,15 +172,27 @@ table {
 }
 
 table .sigpos {
-	background-color: green;
+	background-color: #94BA65;
 }
 
 table .signeg {
-	background-color: red;
+	background-color: #DB4538;
 }
 
 td {
 	text-align: right;
+}
+
+td:hover {
+	font-weight: bold;
+}
+
+th {
+	text-align: center;
+}
+
+th:first-child {
+	text-align: left;
 }
 
 .fullScreen:hover {

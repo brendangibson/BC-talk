@@ -169,18 +169,35 @@ pre {
 
 table {
 	border: 1px solid #ccc;
+	border-collapse: collapse;
 }
 
 table .sigpos {
-	background-color: green;
+	background-color: #94BA65;
 }
 
 table .signeg {
-	background-color: red;
+	background-color: #DB4538;
+}
+
+td, th {
+	border: 1px solid #ccc;
 }
 
 td {
 	text-align: right;
+}
+
+td:hover {
+	font-weight: bold;
+}
+
+th {
+	text-align: center;
+}
+
+th:first-child {
+	text-align: left;
 }
 
 .fullScreen:hover {

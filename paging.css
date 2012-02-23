@@ -167,6 +167,22 @@ pre {
 	overflow: auto;
 }
 
+table {
+	border: 1px solid #ccc;
+}
+
+table .sigpos {
+	background-color: green;
+}
+
+table .signeg {
+	background-color: red;
+}
+
+td {
+	text-align: right;
+}
+
 .fullScreen:hover {
 	opacity: 0.5;
 }

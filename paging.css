@@ -139,7 +139,7 @@ img.bg {
 }
 
 .boxshot.section {
-	position: absolute;
+	position: fixed;
 	display: block;
 	bottom: 40px;
 	right: 40px;

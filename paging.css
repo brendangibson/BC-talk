@@ -169,6 +169,7 @@ pre {
 
 table {
 	border: 1px solid #ccc;
+	border-collapse: collapse;
 }
 
 table .sigpos {
@@ -177,6 +178,10 @@ table .sigpos {
 
 table .signeg {
 	background-color: #DB4538;
+}
+
+td, th {
+	border: 1px solid #ccc;
 }
 
 td {

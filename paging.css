@@ -170,6 +170,7 @@ pre {
 table {
 	border: 1px solid #ccc;
 	border-collapse: collapse;
+	margin: 0 auto;
 }
 
 table .sigpos {
@@ -182,6 +183,7 @@ table .signeg {
 
 td, th {
 	border: 1px solid #ccc;
+	padding: 5px;
 }
 
 td {
@@ -198,6 +200,14 @@ th {
 
 th:first-child {
 	text-align: left;
+}
+
+tr.minor {
+	font-weight: normal;
+}
+
+tr.minor th {
+	font-style: italic;
 }
 
 .fullScreen:hover {

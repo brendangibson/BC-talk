@@ -110,6 +110,6 @@
 			currentPage = 1;
 			$(pageSelector + ":first").fadeIn();
 			setupRandomFadeIns();
-			prettPrint && prettyPrint();
+			prettyPrint && prettyPrint();
 		});
 	}(jQuery));

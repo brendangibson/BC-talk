@@ -84,6 +84,7 @@ dt {
 
 ul {
 	list-style-type: disc;
+	line-height: 72px;
 }
 
 .fullScreen {
@@ -115,11 +116,13 @@ iframe {
 .contentBox img {
 	display: block;
 	margin: 0 auto;
+	padding-top: 25px;
 }
 
 .contentBox img.inline {
 	vertical-align: text-top;
 	display: inline-block;
+	padding-top: 0px;
 }
 
 img.bg {
@@ -127,6 +130,7 @@ img.bg {
 	z-index: 0;
 	width: 100%;
 	height: 100%;
+	padding-top: 0px;
 }
 
 .page .randomFadeIns > .twitter-tweet-rendered {

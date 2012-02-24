@@ -191,7 +191,7 @@ td {
 	text-align: right;
 }
 
-tr td:hover {
+td:hover, tr.minor td:hover {
 	font-weight: bold;
 	background-color: #9CC4E4;
 }
@@ -206,6 +206,7 @@ th:first-child {
 
 tr.minor th, tr.minor td {
 	font-weight: normal;
+	font-size: 75%;
 }
 
 tr.minor th {

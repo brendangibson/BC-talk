@@ -191,8 +191,9 @@ td {
 	text-align: right;
 }
 
-td:hover {
+tr td:hover {
 	font-weight: bold;
+	background-color: #9CC4E4;
 }
 
 th {

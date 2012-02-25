@@ -169,6 +169,7 @@ pre {
 	display: block;
 	font-size: 18px;
 	overflow: auto;
+	line-height: 32px;
 }
 
 table {

@@ -16,11 +16,7 @@ body {
 	color: #333;
 	/*text-shadow: 1px 1px 1px #000;*/
 	background-color: gray;
-	background-image: repeating-linear-gradient(45deg, 
-		transparent, 
-		transparent 1px, 
-		rgba(255,255,255,.5) 1px, 
-		rgba(255,255,255,.5) 2px);
+	background-image: repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.5) 1px,	rgba(255,255,255,.5) 2px);
 }
 
 .pages .page {

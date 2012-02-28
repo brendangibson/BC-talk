@@ -143,12 +143,18 @@ img.bg {
 	opacity: 0.3;
 }
 
-.page .randomFadeIns > .twitter-tweet-rendered {
+blockquote {
+	font-size: 24px;
+	background-color: white;
+	border: 1px solid #B9090B;
+}
+
+.page .randomFadeIns > .twitter-tweet-rendered, .page .randomFadeIns > blockquote {
 	opacity: 0;
 	position: absolute !important;
 }
 
-.page .randomFadeIns > .twitter-tweet-rendered.active {
+.page .randomFadeIns > .twitter-tweet-rendered.active, .page .randomFadeIns > blockquote.active {
 	opacity: 1;
 	transition: all 1s;
 	-webkit-transition: all 1s

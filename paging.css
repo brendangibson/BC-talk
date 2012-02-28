@@ -15,10 +15,10 @@ body {
 	line-height: 52px;
 	color: #333;
 	/*text-shadow: 1px 1px 1px #000;*/
-	background-image: -moz-repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.5) 2px,rgba(255,255,255,.5) 3px);
-	background-image: -webkit-repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.5) 2px,rgba(255,255,255,.5) 3px);
-	background-image: -ms-repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.5) 2px,rgba(255,255,255,.5) 3px);
-	background-image: repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.5) 2px,rgba(255,255,255,.5) 3px);
+	background-image: -moz-repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.3) 2px,rgba(255,255,255,.3) 3px);
+	background-image: -webkit-repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.3) 2px,rgba(255,255,255,.3) 3px);
+	background-image: -ms-repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.3) 2px,rgba(255,255,255,.3) 3px);
+	background-image: repeating-linear-gradient(45deg,transparent,transparent 1px,rgba(255,255,255,.3) 2px,rgba(255,255,255,.3) 3px);
 
 }
 
@@ -80,9 +80,8 @@ h3 {
 dd, dt {
 	float: left;
 	width: 50%;
-	padding: 0;
+	padding: 10px 0;
 	margin: 0;
-	
 }
 
 dt {
@@ -144,9 +143,11 @@ img.bg {
 }
 
 blockquote {
-	font-size: 24px;
+	font-size: 18px;
 	background-color: white;
 	border: 1px solid #B9090B;
+	border-radius: 5px;
+	padding: 15px;
 }
 
 .page .randomFadeIns > .twitter-tweet-rendered, .page .randomFadeIns > blockquote {

@@ -87,6 +87,8 @@ dt {
 ul {
 	list-style-type: disc;
 	line-height: 72px;
+	width: 75%;
+	margin: 0 auto;
 }
 
 .fullScreen {

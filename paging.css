@@ -15,7 +15,7 @@ body {
 	line-height: 52px;
 	color: #333;
 	/*text-shadow: 1px 1px 1px #000;*/
-	background-color: white;
+	background: transparent url(pinstripes.jpg) left top repeat;
 }
 
 .pages .page {
@@ -64,6 +64,7 @@ h1 {
 
 h2 {
 	font-size: 48px;
+	color: #B9090B;
 }
 
 h3 {

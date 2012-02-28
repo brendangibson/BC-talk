@@ -34,7 +34,7 @@
 				});
 			},
 			setupRandomFadeIns = function () {
-				var showTime = 2000,
+				var showTime = 4000,
 					ACTIVE_CLASS = "active";
 				
 				setInterval(function () {

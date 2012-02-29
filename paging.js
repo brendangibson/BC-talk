@@ -118,6 +118,6 @@
 			$(pageSelector + ":first").fadeIn();
 			setupRandomFadeIns();
 			prettyPrint && prettyPrint();
-			$(noteSelector).click(function (e) {e.preventDefault();});
+			$(noteSelector).click(function (e) {e.preventDefault(); e.stopPropagation(); return false;});
 		});
 	}(jQuery));

@@ -238,6 +238,24 @@ tr.minor th {
 	font-style: italic;
 }
 
+.note {
+	position: absolute;
+	width: 15%;
+	height: 50%;
+	right: 20px;
+	top: 20px;
+	background-color: #FAFA90;
+	box-shadow: 5px 5px 5px #ccc;
+}
+
+.note textarea {
+	width: 100%;
+	height: 100%;
+	color: rgba(17, 17, 91, 0.8);
+    	font-family: 'Nothing You Could Do',cursive;
+    	font-size: 24px;
+}
+
 .fullScreen:hover {
 	opacity: 0.5;
 }

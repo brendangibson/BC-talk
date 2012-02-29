@@ -6,6 +6,7 @@
 			fullScreenSelector = ".fullScreen",
 			folderSelector = ".folder",
 			randomFadeInsSelector = ".randomFadeIns",
+			noteSelector = ".note",
 			currentPage = 0,
 			numPages = $(pageSelector).size(),
 		
@@ -117,5 +118,6 @@
 			$(pageSelector + ":first").fadeIn();
 			setupRandomFadeIns();
 			prettyPrint && prettyPrint();
+			$(noteSelector).click(function (e) {e.preventDefault();});
 		});
 	}(jQuery));

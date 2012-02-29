@@ -246,6 +246,7 @@ tr.minor th {
 	top: 20px;
 	background-color: #FAFA90;
 	box-shadow: 5px 5px 5px #ccc;
+    	z-index: 10;
 }
 
 .note textarea {
@@ -254,6 +255,9 @@ tr.minor th {
 	color: rgba(17, 17, 91, 0.8);
     	font-family: 'Nothing You Could Do',cursive;
     	font-size: 24px;
+    	border: none;
+    	padding: 5px;
+	background-color: transparent;
 }
 
 .fullScreen:hover {

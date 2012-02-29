@@ -117,7 +117,7 @@
 		
 
 		var socket = io.connect('epostcardster.no.de');
-		  socket.on('pageturn', function (data) {
+		socket.on('pageturn', function (data) {
 		    console.log(data);
 		});
 		

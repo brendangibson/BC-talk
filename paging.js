@@ -115,6 +115,12 @@
 		});
 		
 		
+
+		var socket = io.connect('epostcardster.no.de');
+		  socket.on('pageturn', function (data) {
+		    console.log(data);
+		});
+		
 		$(document).ready(function () {
 			currentPage = 1;
 			$(pageSelector + ":first").fadeIn();

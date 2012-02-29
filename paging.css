@@ -223,6 +223,7 @@ td:hover, tr.minor td:hover {
 
 th {
 	text-align: center;
+	background-color: #eee;	
 }
 
 th:first-child {

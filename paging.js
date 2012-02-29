@@ -18,13 +18,17 @@
 		
 			stepForward = function () {
 				if (!noteMode && currentPage < numPages) {
+					
 					currentPage += 1;
+					socket.emit('pageturn', {direction: 'forward'});
 					showPage(currentPage);
+					
 				}
 			},
 			stepBack = function () {
 				if (!noteMode && currentPage > 1) {
 					currentPage -= 1;
+					socket.emit('pageturn', {direction: 'back'});
 					showPage(currentPage);
 				}				
 			},

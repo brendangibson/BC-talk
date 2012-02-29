@@ -7,6 +7,7 @@
 			folderSelector = ".folder",
 			randomFadeInsSelector = ".randomFadeIns",
 			noteSelector = ".note",
+			noteMode = false,
 			currentPage = 0,
 			numPages = $(pageSelector).size(),
 		
@@ -16,13 +17,13 @@
 			},
 		
 			stepForward = function () {
-				if (currentPage < numPages) {
+				if (!noteMode && currentPage < numPages) {
 					currentPage += 1;
 					showPage(currentPage);
 				}
 			},
 			stepBack = function () {
-				if (currentPage > 1) {
+				if (!noteMode && currentPage > 1) {
 					currentPage -= 1;
 					showPage(currentPage);
 				}				
@@ -71,7 +72,8 @@
 		});      
 		
 		$(document).on('click', function(e) {
-		    switch (e.which) {
+			noteMode = false;	
+	    	switch (e.which) {
 		        case 1:
 		            stepForward();
 		            break;
@@ -118,6 +120,6 @@
 			$(pageSelector + ":first").fadeIn();
 			setupRandomFadeIns();
 			prettyPrint && prettyPrint();
-			$(noteSelector).click(function (e) {e.preventDefault(); e.stopPropagation(); return false;});
+			$(noteSelector).click(function (e) {noteMode = true; e.preventDefault(); e.stopPropagation(); return false;});
 		});
 	}(jQuery));

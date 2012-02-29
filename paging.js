@@ -120,7 +120,9 @@
 		socket.on('pageturn', function (data) {
 		    console.log(data);
 		});
-		
+		socket.on('message', function (data) {
+		    console.log('message' + data);
+		});
 		$(document).ready(function () {
 			currentPage = 1;
 			$(pageSelector + ":first").fadeIn();

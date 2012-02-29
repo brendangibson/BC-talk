@@ -105,6 +105,12 @@
 		$(document).on('swipeleft', stepBack);
 		$(document).on('swiperight', stepForward);
 		
+		$(document).touchwipe({
+		     wipeLeft: stepBack,
+		     wipeRight: stepForward,
+		     preventDefaultEvents: true
+		});
+		
 		
 		$(document).ready(function () {
 			currentPage = 1;

@@ -124,7 +124,7 @@
 		socket.on('pageturn', function (data) {
 		    console.log(data);
 		});
-		socket.on('message', function (data) {
+		socket.on('message', function (name, data) {
 		    console.log('message' + data);
 		    console.log('message parsed' + dataObj);
 			var dataObj = JSON.parse(data),

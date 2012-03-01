@@ -131,16 +131,16 @@
 		    console.log(data);
 		});
 		socket.on('message', function (data) {
-		    console.log('message' + data);
-		    console.log('message parsed' + dataObj);
 			var dataObj = JSON.parse(data),
 		    	direction = dataObj.direction;
+		    console.log('message' + data);
+		    console.log('message parsed' + dataObj);
 		    	
 		    if (direction === "forward") {
-		    	stepForward()
+		    	stepForward();
 		    }
 		    if (direction === "back") {
-		    	stepBack()
+		    	stepBack();
 		    }
 
 

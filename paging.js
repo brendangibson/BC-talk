@@ -109,7 +109,10 @@
 			}	
 		});
 		
-		$(document).on('contextmenu', stepBack);
+		$(document).on('contextmenu', function () {
+			e.preventDefault();
+			stepBack()
+		});
 		
 		$(document).on('swipeleft', stepBack);
 		$(document).on('swiperight', stepForward);

@@ -126,6 +126,18 @@
 		});
 		socket.on('message', function (data) {
 		    console.log('message' + data);
+		    console.log('message parsed' + dataObj);
+			var dataObj = JSON.parse(data),
+		    	direction = dataObj.direction;
+		    	
+		    if (direction === "forward") {
+		    	stepForward()
+		    }
+		    if (direction === "back") {
+		    	stepBack()
+		    }
+
+
 		});
 		$(document).ready(function () {
 			currentPage = 1;

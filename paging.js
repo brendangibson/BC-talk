@@ -16,7 +16,7 @@
 				$(pageSelector + ":nth-child(" + n + ")").fadeIn();
 			},
 		    goToPage = function (pageNumber) {
-		    	if (pageNumber < numPages && pageNumber > 0) {
+		    	if (pageNumber <= numPages && pageNumber > 0) {
 		    		currentPage = pageNumber;
 		    		showPage(currentPage);
 		    	}

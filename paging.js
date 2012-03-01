@@ -15,13 +15,20 @@
 				$(pageSelector).fadeOut();
 				$(pageSelector + ":nth-child(" + n + ")").fadeIn();
 			},
-		
+		    goToPage = function (pageNumber) {
+		    	if (pageNumber < numPages && pageNumber > 0) {
+		    		currentPage = pageNumber;
+		    		showPage(currentPage);
+		    	}
+		    },
 			stepForward = function (master) {
 				if (!noteMode && currentPage < numPages) {
 					
 					currentPage += 1;
 					if (master) {
-						socket.emit('pageturn', {direction: 'forward'});
+						socket.emit('pageturn', {direction: 'forward',
+									currentPage: currentPage
+						});
 					}
 					showPage(currentPage);
 					
@@ -31,7 +38,9 @@
 				if (!noteMode && currentPage > 1) {
 					currentPage -= 1;
 					if (master) {
-						socket.emit('pageturn', {direction: 'back'});
+						socket.emit('pageturn', {direction: 'back',
+									currentPage: currentPage
+						});
 					}
 					showPage(currentPage);
 				}				
@@ -136,15 +145,20 @@
 
 		socket.on('message', function (data) {
 			var dataObj = JSON.parse(data),
-		    	direction = dataObj.direction;
+		    	direction = dataObj.direction,
+		    	currentPage = dataObj.currentPage;
 		    console.log('message' + data);
 		    console.log('message parsed' + dataObj);
-		    	
-		    if (direction === "forward") {
-		    	stepForward();
-		    }
-		    if (direction === "back") {
-		    	stepBack();
+		    
+		    if (currentPage) {
+		    	goToPage(currentPage);	
+		    } else {
+			    if (direction === "forward") {
+			    	stepForward();
+			    }
+			    if (direction === "back") {
+			    	stepBack();
+			    }
 		    }
 
 

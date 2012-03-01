@@ -16,11 +16,13 @@
 				$(pageSelector + ":nth-child(" + n + ")").fadeIn();
 			},
 		
-			stepForward = function () {
+			stepForward = function (master) {
 				if (!noteMode && currentPage < numPages) {
 					
 					currentPage += 1;
-					socket.emit('pageturn', {direction: 'forward'});
+					if (master) {
+						socket.emit('pageturn', {direction: 'forward'});
+					}
 					showPage(currentPage);
 					
 				}
@@ -28,7 +30,9 @@
 			stepBack = function () {
 				if (!noteMode && currentPage > 1) {
 					currentPage -= 1;
-					socket.emit('pageturn', {direction: 'back'});
+					if (master) {
+						socket.emit('pageturn', {direction: 'back'});
+					}
 					showPage(currentPage);
 				}				
 			},
@@ -79,17 +83,17 @@
 			noteMode = false;	
 	    	switch (e.which) {
 		        case 1:
-		            stepForward();
+		            stepForward(true);
 		            break;
 		        case 2:
-		            stepForward();
+		            stepForward(true);
 		            break;
 		        case 3:
-		            stepBack();
+		            stepBack(true);
 		            e.preventDefault();
 		            break;
 		        default:
-		            stepForward();
+		            stepForward(true);
 		    }
 		});
 		
@@ -97,11 +101,11 @@
 			switch (String.fromCharCode(e.which)) {
 				case 'n':
 				case 'N': 
-					stepForward();
+					stepForward(true);
 					break;
 				case 'p':
 				case 'P':
-					stepBack();
+					stepBack(true);
 					break;
 				default:
 					// do nothing
@@ -111,26 +115,25 @@
 		
 		$(document).on('contextmenu', function (e) {
 			e.stopPropagation();
-			stepBack();
+			stepBack(true);
 			e.preventDefault();
 			return false;
 		});
 		
-		$(document).on('swipeleft', stepBack);
-		$(document).on('swiperight', stepForward);
-		
 		$(document).touchwipe({
-		     wipeLeft: stepBack,
-		     wipeRight: stepForward,
+		     wipeLeft: function () {
+		     	stepBack(true);
+	     	 },
+		     wipeRight: function () {
+		     	stepForward(true);
+	     	 },
 		     preventDefaultEvents: true
 		});
 		
 		
 
 		var socket = io.connect('epostcardster.no.de');
-		socket.on('pageturn', function (data) {
-		    console.log(data);
-		});
+
 		socket.on('message', function (data) {
 			var dataObj = JSON.parse(data),
 		    	direction = dataObj.direction;

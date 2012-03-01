@@ -27,7 +27,7 @@
 					
 				}
 			},
-			stepBack = function () {
+			stepBack = function (master) {
 				if (!noteMode && currentPage > 1) {
 					currentPage -= 1;
 					if (master) {

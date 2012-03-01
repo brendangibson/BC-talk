@@ -109,7 +109,8 @@
 			}	
 		});
 		
-		$(document).on('contextmenu', function () {
+		$(document).on('contextmenu', function (e) {
+			e.stopPropagation();
 			stepBack();
 			e.preventDefault();
 			return false;

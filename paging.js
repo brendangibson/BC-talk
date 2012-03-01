@@ -109,6 +109,8 @@
 			}	
 		});
 		
+		$(document).on('contextmenu', stepBack);
+		
 		$(document).on('swipeleft', stepBack);
 		$(document).on('swiperight', stepForward);
 		

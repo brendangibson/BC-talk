@@ -110,8 +110,9 @@
 		});
 		
 		$(document).on('contextmenu', function () {
+			stepBack();
 			e.preventDefault();
-			stepBack()
+			return false;
 		});
 		
 		$(document).on('swipeleft', stepBack);

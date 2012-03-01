@@ -144,7 +144,7 @@
 		var socket = io.connect('epostcardster.no.de', 
 		{ 'reconnect': true,
 		  'reconnection delay': 500,
-		  'max reconnection attempts': 10
+		  'max reconnection attempts': 100
 		});
 
 		socket.on('message', function (data) {

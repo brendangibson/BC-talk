@@ -1,11 +1,11 @@
 <html>
 <head>
-	<title>Multivariate Testing</title>
-<!--	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>-->
+	<title>BC-talk</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nothing+You+Could+Do">
 	<link href="prettify.css" type="text/css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="paging.css">
+	
 	<style type="text/css">
 		.blue {
 			display: inline-block;
@@ -35,452 +35,108 @@
 <div class="pages">
 	<div class="page">
 		<div class="contentBox">
-		<h1>Using multivariate testing to continually improve user experience</h1>
+		<h1>Title Page</h1>
 		</div>
 	</div>
 	<div class="page">
 		<img src="me.jpg" class="boxshot section" alt="me"/>
 		<div class="contentBox">
-		<h2>About me</h2>
+		<h2>Chapter Heading</h2>
 		</div>
 	</div>
 	<div class="page">
 		<img src="me.jpg" class="boxshot section" alt="me"/>
 		<div class="contentBox">
-		<h3>It's all about me</h3>
+		<h3>Heading with bullet points</h3>
 		<ul>
-			<li>Senior User Interface Engineer at netflix.com</li>
-			<li>4 seasons at backcountry.com</li>
-			<li>Face of explore64.com</li>
-		</ul>
-		<img src="explore64.png" alt="explore64"/>
-		</div>
-	</div>
-	<div class="page">
-		<img src="me.jpg" class="boxshot section" alt="me"/>
-		<div class="contentBox">
-		<h3>At Netflix I do &mdash; </h3>
-		<ul>
-			<li>Row, Gallery and List pages</li>
-			<li>BOB's <img class="inline" alt="BOB" src="bob.png"/></li>
-			<li>UMA's <img class="inline" alt="UMA" src="uma.png"/></li>
-			<li>Lots of A/B testing</li>
-		<ul>
-		</div>
-	</div>
-	<div class="page">
-		<div class="contentBox">
-		<h3>What you're in for</h3>
-		<ul>
-			<li>Basic concepts</li>
-			<li>Why?</li>
-			<li>Designing a test</li>
-			<li>How is it implemented?</li>
-			<li>Metrics</li>
-			<li>Conclusions</li>
-			<li>Q & A</li>
+			<li>First bullet point</li>
+			<li>Second bullet point</li>
+			<li>Yet another bullet point</li>
 		</ul>
 		</div>
 	</div>
 	<div class="page">
-		<img src="concepts.jpg" class="boxshot section" alt="concepts"/>
-		<div class="contentBox">
-		<h2>Basic concepts</h2>
-		</div>
-	</div>
-	<div class="page">
-		<img src="concepts.jpg" class="boxshot section" alt="concepts"/>
-		<div class="contentBox">
-		<h3>What is this "multivariate testing" thing that you are talking about?</h3>
-		</div>
-	</div>
-	<div class="page">
-		<img src="concepts.jpg" class="boxshot section" alt="concepts"/>
-		<div class="contentBox">
-		<h3>Also known as</h3> 
-		<ul>
-			<li>A/B testing</li>
-			<li>Bucket testing</li>
-			<li>Large scale multivariate testing</li>
-		</ul>
-		</div>
-	</div>
-	<div class="page">
-		<img src="concepts.jpg" class="boxshot section" alt="concepts"/>
-		<div class="contentBox">
-		<h3>Terms</h3>
-		<ul>
-			<li>Test</li>
-			<li>Cell</li>
-			<li>Control</li>
-			<li>Hypotheses</li>
-		
-		</ul>
-		</div>
-	</div>
-	<div class="page">
-		<img src="why.jpg" class="boxshot section" alt="why"/>
-		<div class="contentBox">
-		<h2>Why?</h2>
-		</div>
-	</div>
-
-	<div class="page">
-		<img src="why.jpg" class="boxshot section" alt="why?"/>
 		<img class="bg" src="http://maps.googleapis.com/maps/api/staticmap?center=37.376705,-122.11441&zoom=9&format=png&sensor=false&size=640x480&maptype=roadmap&style=feature:road.highway|element:labels|visibility:on"/>
 		<div class="contentBox lighten">
-			<h3>Average employee</h3>
+			<h3>Definition List</h3>
 			<dl>
-				<dt>Lives</dt><dd>Silicon Valley or San Francisco</dd>
-				<dt>Disposable income</dt><dd>Yes</dd>
-				<dt>Favorite movies</dt><dd>Ip Man, Shawshank Redemption</dd>
-				<dt>Computer use</dt><dd>14 hours per day</dd>
-				<dt>TV viewing</dt><dd>Not much</dd>
-				<dt>Browser</dt><dd>Chrome</dd>
-				<dt>In spare time</dt><dd>Plays Settlers of Catan, Minecraft</dd>
+				<dt>Term</dt><dd>Definition</dd>
+				<dt>Map</dt><dd>Silicon Valley</dd>
 			</dl>
-		</div>
-	</div>
-	<div class="page">
-		<img src="why.jpg" class="boxshot section" alt="why?"/>
-		<img class="bg" src="http://chart.apis.google.com/chart?chf=a,s,000000|bg,s,EAF7FE&chs=440x220&cht=t&chco=FFFFFF,B9090B,000000&chld=AGARAWBBBMBOBRBSBZCACLCOCRDMDOECFKGBGDGFGGGIGPGTGYHNHTIEIMJMKNKYMQMSMXNIPAPEPRPYSRSVTTUMUSUYVCVE&chd=t:1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1&chtm=world" width="440" height="220" alt="" />
-		<div class="contentBox lighten">
-			<h3>Average customer</h3>
-			<dl>
-				<dt>Lives</dt><dd>Americas or Britains</dd>
-				<dt>Disposable income</dt><dd>Maybe</dd>
-				<dt>Favorite movies</dt><dd>Jackass 3, Downton Abbey</dd>
-				<dt>Computer use</dt><dd>2 hours per day</dd>
-				<dt>TV viewing</dt><dd>8 hours per day</dd>
-				<dt>Browser</dt><dd>Safari, IE, Firefox, Chrome</dd>
-				<dt>In spare time</dt><dd>Watches Netflix</dd>
-			</dl>
-		</div>
-	</div>
-	<div class="page">
-		<img src="why.jpg" class="boxshot section" alt="why?"/>
-		<div class="contentBox">
-		<h3>Who uses it?</h3>
-		<p>Everyone but Apple</p>
 		</div>
 	</div>
 	<div class="page fortyOneShades lighten">
-		<img src="why.jpg" class="boxshot section" alt="why?"/>
 		<div class="contentBox">
 		<h3>41 shades of blue</h3>
 		</div>
 	</div>
 	<div class="page">
-		<img src="why.jpg" class="boxshot section" alt="why?"/>
 		<div class="contentBox">
-		<h3>Density Tests</h3>
-		<p>Changed from</p>
-		<img src="oldrows.png" alt="Old rows"/>
-		<p>to</p>
-		<img src="newrows.png" alt="New rows"/>
-		</div>
-	</div>
-	<div class="page">
-		<img src="why.jpg" class="boxshot section" alt="why?"/>
-		<div class="contentBox">
-		<h3>Customer Response</h3>
+		<h3>Random Fade-ins</h3>
 		<div class="randomFadeIns">
-			<blockquote class="twitter-tweet"><p>PS. Netflix, stop changing your damn interface. You haven't made a single change for the better since I got you so just stop trying</p>&mdash; Alex Niezabitowski (@AtreegrowsinCT) <a href="https://twitter.com/AtreegrowsinCT/status/78608809492365312" data-datetime="2011-06-08T23:46:15+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>the @<a href="https://twitter.com/netflix">netflix</a> redesign is godawful for browsing. bring back left/right buttons or a scrollbar for my recommendations pages!</p>&mdash; Caitlin (@mllecait) <a href="https://twitter.com/mllecait/status/78600270329823232" data-datetime="2011-06-08T23:12:19+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>@<a href="https://twitter.com/netflix">netflix</a> @<a href="https://twitter.com/instant_netflix">instant_netflix</a> Very Impressive New UXD I like it intuitive and extremely user friendly loving the scroll feature an insta play &gt;&lt;</p>&mdash; Jason Bhatti (@BhattiBytes) <a href="https://twitter.com/BhattiBytes/status/78599353085857792" data-datetime="2011-06-08T23:08:40+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>The new Netflix format is a trainwreck!</p>&mdash; Gypsy Richmond (@gypsyrichmond) <a href="https://twitter.com/gypsyrichmond/status/78597822622085121" data-datetime="2011-06-08T23:02:35+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>Wow, @<a href="https://twitter.com/netflix">netflix</a> just had God awful redesign. I mean, I know some bad designers & even they'd think this sucks. Hard. Often. Change it back!!</p>&mdash; mrapropos (@mrapropos) <a href="https://twitter.com/mrapropos/status/78595354660057090" data-datetime="2011-06-08T22:52:47+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>OH MY GAWD NETFLIX NOOOOOOOOOO. you were the shining example of the perfectly merchandised site... now this ... *sobs*</p>&mdash; dubs. (@dmakeda) <a href="https://twitter.com/dmakeda/status/78571262338801664" data-datetime="2011-06-08T21:17:03+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>WOW <a href="https://twitter.com/search/%2523NETFLIX">#NETFLIX</a> CHANGE THEIR WHOLE WEBSITE AND IT LOOKS AMAZING!</p>&mdash; SeanXtina (@SeanXtina) <a href="https://twitter.com/SeanXtina/status/78568073304621056" data-datetime="2011-06-08T21:04:23+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>Did Netflix change its look or is my computer just fucking up?</p>&mdash; Eugene Chillson (@imLowkeyCool) <a href="https://twitter.com/imLowkeyCool/status/78567145394536448" data-datetime="2011-06-08T21:00:41+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>Netflix, what the hell happened to my home page? I hate it. hate it. hate it. hate it. Thanks.</p>&mdash; Jessica (@im4punk) <a href="https://twitter.com/im4punk/status/78565638704070656" data-datetime="2011-06-08T20:54:42+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>I know there is a lot of shit going on in the world, but what upsets me most is how stupid the Watch Instantly page of @<a href="https://twitter.com/netflix">netflix</a> looks.</p>&mdash; Robert Love (@roblove90) <a href="https://twitter.com/roblove90/status/78565163619467264" data-datetime="2011-06-08T20:52:49+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>misterstibbons: NETFLIX WHYYYYYYYYYYY YOU WERE GREAT JUST THE WAY YOU WERE <a href="http://tumblr.com/x5v2wowjjg">http://tumblr.com/x5v2wowjjg</a></p>&mdash; Rory Glastetter (@prettycenturion) <a href="https://twitter.com/prettycenturion/status/78565164831604736" data-datetime="2011-06-08T20:52:49+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>The new Netflix web interface BLOWS ASS.</p>&mdash; Michael Curry (@BS_Mike) <a href="https://twitter.com/BS_Mike/status/78564709942558720" data-datetime="2011-06-08T20:51:01+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="78562643497070592"><p>@<a href="https://twitter.com/ericaserio">ericaserio</a> The @<a href="https://twitter.com/netflix">netflix</a> main page looks awful.</p>&mdash; Robert Love (@roblove90) <a href="https://twitter.com/roblove90/status/78563282084036609" data-datetime="2011-06-08T20:45:20+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>So this redesigned Netflix homepage. It just looks weird</p>&mdash; Cory Matthews (@smithma388) <a href="https://twitter.com/smithma388/status/78558446504517632" data-datetime="2011-06-08T20:26:07+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>It's like @<a href="https://twitter.com/Netflix">Netflix</a> is in a contest with itself to see how useless it can make its own website.</p>&mdash; Brian Kelley (@BTSjunkie) <a href="https://twitter.com/BTSjunkie/status/78558865863606273" data-datetime="2011-06-08T20:27:47+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>not digging netflix.ca's fixed scroll-speed movie browsing</p>&mdash; enemymouse (@enemymouse) <a href="https://twitter.com/enemymouse/status/78558995404701696" data-datetime="2011-06-08T20:28:18+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>What the hell did @<a href="https://twitter.com/netflix">netflix</a> do to their website. Holy potatos... It is ugly and not very user friendly... Netflix for dummies?</p>&mdash; Just call me J (@VivaLaserdisc) <a href="https://twitter.com/VivaLaserdisc/status/78560145763876864" data-datetime="2011-06-08T20:32:52+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="twitter-tweet tw-align-center"><p>Hello @<a href="https://twitter.com/Netflix">Netflix</a>. You look different. Did you do something with your hair? <a href="http://ow.ly/5dohL">http://ow.ly/5dohL</a></p>&mdash; Monique Pouget (@MoniqueTheGeek) <a href="https://twitter.com/MoniqueTheGeek/status/78558551173369856" data-datetime="2011-06-08T20:26:32+00:00">June 8, 2011</a></blockquote>
-			<blockquote class="blog-comment">Dear Michael,<br> 
-I am sorry to have to be the one to inform you that the new interface is utter rubbish. It fails to be an improvement over its predecessor in any aspect of its function. Please inform your employers that a <b>drunken dyslexic monkey</b> would be a more acceptable design lead for your web concepts.
-<br>
-Thanks a bunch,<br>
-Kyle<br>
-</blockquote>
-			<blockquote><em>Anonymous said...</em><br> 
-the manager that approved these changes needs to be fired
-</blockquote>
-			<blockquote><em>Patrick Green - UNC Wilmington</em><br>
-You had a perfectly good interface with awesome searching/browsing tools. Why would you implement this peace of crap that doesn't even work correctly with some browsers. Please do something to fix this mess.
-</blockquote>
+			<blockquote class="twitter-tweet tw-align-center"><p>More incredible bird photography frm On the Wing: Signs of Spring ~ American Avocets and Double-crested Cormorants <a href="http://t.co/7kjdrty1" title="http://ow.ly/9tf6Q">ow.ly/9tf6Q</a></p>&mdash; Open Space District (@mrosd) <a href="https://twitter.com/mrosd/status/177072340788723713" data-datetime="2012-03-06T16:45:10+00:00">March 6, 2012</a></blockquote>
+			<blockquote class="blog-comment">Here is a blog comment</blockquote>
 		</div>
 		</div>
 	</div>
 	<div class="page">
-		<img src="design.jpg" class="boxshot section" alt="Design"/>
-		<div class="contentBox">
-		<h2>Designing a test</h2>
-		</div>
-	</div>
-	<div class="page">
-		<img src="design.jpg" class="boxshot section" alt="Design"/>
-		<div class="contentBox">
-		<h3>Allocation Strategies</h3>
-		<ul>
-			<li>New</li>
-			<li>Existing</li>
-		</ul>
-		</div>
-	</div>
-	<div class="page">
-		<img src="design.jpg" class="boxshot section" alt="Design"/>
-		<img class="bg" src="climb.jpg"/>
-		<div class="contentBox lighten">
-		<h3>Each tested improvement puts you further up the mountain</h3>
-		</div>
-	</div>
-	<div class="page">
-		<img src="design.jpg" class="boxshot section" alt="Design"/>
 		<img class="bg" src="nebo.jpg"/>
 		<div class="contentBox lighten">
-		<h3>What if there are bigger mountains?</h3>
+		<h3>Fullscreen background</h3>
 		</div>
 	</div>
 	<div class="page">
-		<img src="design.jpg" class="boxshot section" alt="Design"/>
 		<div class="contentBox">
-		<h3>Spec</h3>
+		<h3>A Table</h3>
 		<table>
-		<tr><th></th> <th> Control </th><th> Cell 1</th> <th> Cell 2 </th><th> Cell 3 </th><th> Cell 4 </th><th> Cell 5 </th><th> Cell 6 </th></tr>
-		<tr><th> Existing Nav </th>     <td>X</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-		<tr><th> Hover Nav </th>        <td> </td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
-		<tr><th> Gallery Pages </th>    <td> </td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td>X</td></tr>
-		<tr><th> - Grouped Options </th><td> </td><td>X</td><td>X</td><td>X</td><td> </td><td>X</td><td>X</td></tr>
-		<tr><th> - Pagination </th>     <td>X</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
-		<tr><th> - Auto-load </th>      <td> </td><td>X</td><td> </td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
-		<tr><th> - Click-to-load </th>  <td> </td><td> </td><td>X</td><td> </td><td> </td><td> </td><td> </td></tr>
-		<tr><th> - In-Page Sorting </th><td> </td><td> </td><td> </td><td>X</td><td> </td><td> </td><td>X</td></tr>
-		<tr><th> Row Pages </th>        <td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td></td><td> </td></tr>
-		<tr><th> - Auto-load </th>      <td> </td><td> </td><td> </td><td> </td><td>X</td><td> </td><td> </td></tr>
+		<tr><th></th> <th> Features </th><th> Rev 1</th> <th> Rev 2 </th><th> Rev 3 </th><th> Rev 4 </th><th> Rev 5 </th><th> Rev 6 </th></tr>
+		<tr><th> Trolls </th>     <td>X</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td></tr>
+		<tr><th> Dragons </th>        <td> </td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
 		</table>
 		</div>
 	</div>
 	<div class="page">
-		<img src="design.jpg" class="boxshot section" alt="Design"/>
 		<div class="note"><textarea></textarea></div>
 		<div class="contentBox">
-		<h3>Case Study</h3>
-		<iframe src="http://steepandcheap.com"></iframe>
+		<h3>Embedded site with notepad</h3>
+		<iframe src="http://github.com"></iframe>
 		</div>
 	</div>
 	<div class="page">
-		<img src="how.jpg" class="boxshot section" alt="how?"/>
 		<div class="contentBox">
-		<h2>How is it implemented?</h2>
-		</div>
-	</div>
-	<div class="page">
-		<img src="how.jpg" class="boxshot section" alt="how?"/>
-		<div class="contentBox">
-		<h3>Infrastructure</h3>
-		<img src="cassandra_logo.png" alt="Cassandra"/>
-		</div>
-	</div>	
-	<div class="page">
-		<img src="how.jpg" class="boxshot section" alt="how?"/>
-		<div class="contentBox">
-		<h3>Tools</h3>
-		<img src="abadmin.png" alt="AB Admin"/>
-		</div>
-	</div>		
-	<div class="page">
-		<img src="how.jpg" class="boxshot section" alt="how?"/>
-		<div class="contentBox">
-		<h3>Test setup</h3>
+		<h3>Code</h3>
 		<pre class="prettyprint">
-public void initCells() {
-	setTestCells(
-	    new TestCell(), /* Control */
-	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-	            GenrePagesTestFeature.BREADCRUMB),
-	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.CLICK_TO_LOAD,
-	            GenrePagesTestFeature.BREADCRUMB),
-	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.NO_PAGINATION,
-	            GenrePagesTestFeature.AUTO_LOAD, GenrePagesTestFeature.HIDE_LIST_LINK,
-	            GenrePagesTestFeature.GALLERY_SORT, GenrePagesTestFeature.BREADCRUMB),
-	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.HIDE_GALLERY_LINK,
-	            GenrePagesTestFeature.ROWS_WITH_TWO_TITLES, GenrePagesTestFeature.BREADCRUMB,
-	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-	            GenrePagesTestFeature.RHS_BUTTONS),
-	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-	            GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.BREADCRUMB),
-	    new TestCell(GenrePagesTestFeature.DROPDOWN_NAV, GenrePagesTestFeature.RHS_BUTTONS,
-	            GenrePagesTestFeature.NO_PAGINATION, GenrePagesTestFeature.AUTO_LOAD,
-	            GenrePagesTestFeature.DIRECT_TO_GALLERY, GenrePagesTestFeature.GALLERY_SORT,
-	            GenrePagesTestFeature.BREADCRUMB)
-	);
-}
-		</pre>
-		</div>
-	</div>
-	<div class="page">
-	<img src="how.jpg" class="boxshot section" alt="how?"/>
-	<div class="contentBox">
-		<h3>Business logic</h3>
-		<pre class="prettyprint">
-if (GenrePagesTestUtils.hasFeature(GenrePagesTestFeature.GALLERY_SORT)) {
-    	addModel(VideosByViewTypeAction.buildDropDownModel(getSortType(), getSortOrder()));
-}
-		</pre>
-		</div>
-	</div>
-	<div class="page">
-	<img src="how.jpg" class="boxshot section" alt="how?"/>
-	<div class="contentBox">
-		<h3>Javascript</h3>
-		<pre>http://cdn1.nflxext.com/FilePackageGetter/sharedSystem/pkg-nflxrsrc-f3ffc0161d7af00000203e1923095a247060171f6f8ff98380214-1329077382-1-4.js?v=1</pre>
-		<h3>CSS</h3>
-		<pre>http://cdn1.nflxext.com/FilePackageGetter/sharedSystem/pkg-nflxrsrc-00002008e2cd8094026246641838c904f01800-1329077376-1-4.css?v=1</pre>
-		</div>
-	</div>
-	<div class="page">
-	<img src="how.jpg" class="boxshot section" alt="how?"/>
-	<div class="contentBox">
-		<h3>In the code</h3>
-		<pre class="prettyprint">
-/**
- * @nfPackageName SCROLL_AFFORDANCE
- * @nfRequires ["MINISCROLL"]
- * @nfStrategy com.netflix.ui.pkgmodules.FileInclusionStrategies.SCROLL_AFFORDANCE
-*/
+			.blue {
+				display: inline-block;
+				margin: 0;
+				position: relative;
+				opacity: 0.7;
+				z-index: 5;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-ms-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+	
+			}
+			.blue:hover {
+				opacity: 0.95;
+				margin: -10px;
+			}
+			.fortyOneShades h2 {
+				color: #69d2e7;
+				position: absolute;
+			}
 		</pre>
 		</div>
 	</div>
 	<div class="page">
 		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
 		<div class="contentBox">
-		<h2>Metrics</h2>
-		</div>
-	</div>
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>What interests us</h3>
-		<ul>
-			<li>Retention #1</li>
-			<li>Streaming hours</li>
-			<li>Ratings</li>
-			<li>Page speed</li>
-			<li>Queue adds</li>
-		</ul>
-		</div>
-	</div>
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>Another Spec</h3>
-		<table>
-		<tr><th>Features</th>			<th>Control</th><th>Cell 1</th>	<th>Cell 2</th>	<th>Cell 3</th>	<th>Cell 4</th>	<th>Cell 5</th>	<th>Cell 6</th></tr>
-		<tr><th>Link MDP prod</th>		<td>X</td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>	<td> </td> 	</tr>
-		<tr><th>Link MDP BOB</th>	 	<td> </td> 	<td> </td> 	<td> </td>	<td> </td>	<td> </td>	<td>X</td>	<td> </td>	</tr>
-		<tr><th>Stretchiness</th>	 	<td> </td>	<td>X</td>	<td> </td>	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	</tr>
-		<tr><th>Horizontal Scrolling</th>	<td> </td> 	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	</tr>
-		<tr><th>Progressive Loading</th>	<td> </td> 	<td>X</td>	<td>X</td>	<td>X</td>	<td> </td> 	<td>X</td>	<td>X</td>	</tr>
-		<tr><th>Interactive BoB</th> 	 	<td> </td>	<td> </td>	<td> </td>	<td> </td>	<td> </td> 	<td>X</td>	<td> </td>	</tr>
-		<tr><th>Evidence</th>	 	 	<td> </td>	<td> </td>	<td> </td> 	<td>X</td>	<td> </td>	<td> </td>	<td> </td>	</tr>
-		<tr><th>Play Buttons (hover)</th>	<td> </td> 	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	<td> </td> 	</tr>
-		<tr><th>Flood red</th>	 		<td>X</td>	<td> </td>	<td>X</td>	<td> </td>	<td> </td>	<td> </td>	<td> </td>	</tr>	 	 
-		<tr><th>Row dividers</th>	 	<td> </td>	<td> </td> 	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	<td>X</td>	</tr>	 
-		</table>
-		</div>
-	</div>
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>Results</h3>
-		<table>
-			<tr><th></th><th>Control</th><th>Cell 1</th><th>Cell 2</th><th>Cell 3</th><th>Cell 4</th><th>Cell 5</th><th>Cell 6</th></tr>
-			<tr><th>Allocations</th><td>30,000</td><td>28,993</td><td>29,934</td><td>29,031</td><td>28,810</td><td>29,452</td><td>29,976</td></tr>
-			
-			<tr><th>Retention</th><td>90.93</td><td class="sigpos">91.52</td><td>91.15</td><td class="sigpos">91.61</td><td>90.95</td><td>91.16</td><td>91.40</td></tr>
-			<tr class="minor"><th>p-value (%)</th><td></td><td class="sigpos">1.36</td><td>20.84</td><td class="sigpos">0.55</td><td>47.11</td><td>19.19</td><td>4.18</td></tr>
-			
-			<tr><th>% Accounts Viewing > 0 min</th><td>91.33</td><td class="sigpos">91.99</td><td class="sigpos">91.88</td><td class="sigpos">91.92</td><td>89.52</td><td class="sigpos">91.96</td><td>91.68</td></tr>
-			<tr class="minor"><th>p-value</th><td></td><td class="sigpos">0.43</td><td class="sigpos">1.35</td><td class="sigpos">1.00</td><td>21.94</td><td class="sigpos">0.63</td><td>8.26</td></tr>
-			
-			<tr><th>% Accounts Viewing > 10 hours</th><td>71.70</td><td>72.35</td><td>71.92</td><td class="sigpos">72.72</td><td>71.85</td><td class="sigpos">72.46</td><td>71.85</td></tr>
-			<tr class="minor"><th>p-value (%)</th><td></td><td>4.45</td><td>28.10</td><td class="sigpos">0.34</td><td>35.17</td><td class="sigpos">2.25</td><td>34.80</td></tr>
-			
-			<tr><th>% Accounts Viewing > 3 hours (PC/Mac)</th><td>33.91</td><td class="sigpos">34.72</td><td>34.60</td><td class="sigpos">34.99</td><td>34.26</td><td class="sigpos">34.85</td><td class="sigpos">35.27</td></tr>
-			<tr class="minor"><th>p-value (%)</th><td></td><td class="sigpos">1.74</td><td>3.56</td><td class="sigpos">0.26</td><td>17.91</td><td class="sigpos">0.76</td><td class="sigpos">0.02</td></tr>
-			
-			<tr><th>% Accounts with Title Ratings >= 5</th><td>29.67</td><td class="signeg">27.94</td><td class="signeg">27.93</td><td class="signeg">28.15</td><td>28.98</td><td class="signeg">27.85</td><td class="signeg">27.99</td></tr>
-			<tr class="minor"><th>p-value (%)</th><td></td><td class="signeg">0.00</td><td class="signeg">0.01</td><td class="signeg">0.00</td><td>3.80</td><td class="signeg">0.00</td><td class="signeg">0.00</td></tr>
-		</table>
-		</div>
-	</div>
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>p-value is ...</h3>
-		<p>The probability that you really made no difference</p>
+		<h3>Heading with text</h3>
+		<p>The text goes here.</p>
 		</div>
 	</div>	
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>Directional</h3>
-		<h4>Scrolling speed</h4>
-		<img src="speed.png" alt="Speed microtest results"/>
-		</div>
-	</div>	
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>Do no harm</h3>
-		<h4>Genre Pages Test</h4>
-		<p>Sometimes it's hard to move the needle</p>
-		</div>
-	</div>
-	<div class="page">
-		<img src="metrics.jpg" class="boxshot section" alt="metrics"/>
-		<div class="contentBox">
-		<h3>Failed</h3>
-		<h4>CDN image domains</h4>
-		<img src="dns_graph.png" alt="DNS graph"/>
-		</div>
-	</div>
-	<div class="page">
-		<img src="conclusions.jpg" class="boxshot section" alt="conclusions"/>
-		<div class="contentBox">
-		<h2>Conclusions</h2>
-		</div>
-	</div>
-	<div class="page">
-		<img src="conclusions.jpg" class="boxshot section" alt="conclusions"/>
-		<div class="contentBox">
-		<h3>What I've learnt</h3>
-		<ul>
-			<li>Existing users hate change</li>
-			<li>Users hate autoplay</li>
-			<li>The simplest solution often wins</li>
-			<li>Algo more significant than UI</li>
-			<li>Balance</li>
-		</ul>
-		</div>
-	</div>
-
-	<div class="page">
-		<img src="qna.jpg" class="boxshot section" alt="Q and A"/>
-		<div class="contentBox">
-		<h2>Q and possible A</h2>
-		</div>
-	</div>
 
 	<div class="fullScreen"></div>
 </div>
